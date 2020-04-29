@@ -21,6 +21,7 @@ class CopyInventoryCommand(private var instance : Coruscant) : CommandExecutor {
 
         if(args.size != 1){
             player.sendMessage("${ChatColor.RED}Invalid Args.")
+            return false
         }
 
         var target : Player = Bukkit.getPlayerExact(args[0])

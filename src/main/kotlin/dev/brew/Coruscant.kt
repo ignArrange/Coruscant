@@ -53,6 +53,7 @@ class Coruscant : JavaPlugin() {
         this.getCommand("fly").executor = FlyCommand(this)
         this.getCommand("clearinventory").executor = ClearInventoryCommand(this)
         this.getCommand("copyinventory").executor = CopyInventoryCommand(this)
+        this.getCommand("heal").executor = HealCommand(this)
     }
 
     companion object {

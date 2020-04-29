@@ -18,6 +18,7 @@ commands:
   fire:
     aliases: [fr, fireres]
   alert:
+  heal:
   clearinventory:
     aliases: [ci, niggaremovemyinventory]
   copyinventory:
