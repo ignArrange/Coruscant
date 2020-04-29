@@ -4,9 +4,22 @@ help:
   -
   -
   -
+spawn:
+  x:
+  y:
+  z:
 gamemode:
   creative: "&6Gamemode: &fCREATIVE"
   survival: "&6Gamemode: &fSURVIVAL"
+# %line% - Line
+# %player% - Player Name
+# %doublearrow% - »
+join:
+  -
+  -
+  -
+  -
+  -
 discord:
 telegram:
 teamspeak:

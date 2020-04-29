@@ -17,3 +17,6 @@ commands:
     aliases: [inv, invisiblity]
   fire:
     aliases: [fr, fireres]
+  alert:
+  craft:
+    aliases: [craftingtable, crafting, workbench]
