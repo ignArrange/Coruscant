@@ -1,0 +1,7 @@
+name: Coruscant
+version: 1.0-SNAPSHOT
+main: dev.brew.Coruscant
+commands:
+  gmc:
+  gms:
+  help:

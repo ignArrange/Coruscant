@@ -1,5 +1,8 @@
 package dev.brew
 
+import dev.brew.commands.GamemodeCreativeCommand
+import dev.brew.commands.GamemodeSurvivalCommand
+import dev.brew.commands.HelpCommand
 import org.bukkit.plugin.java.JavaPlugin
 
 /**
@@ -17,7 +20,9 @@ class Coruscant : JavaPlugin() {
     }
 
     private fun registerCommands() {
-
+        this.getCommand("gmc").executor = GamemodeCreativeCommand(this)
+        this.getCommand("gms").executor = GamemodeSurvivalCommand(this)
+        this.getCommand("help").executor = HelpCommand(this)
     }
 
     companion object {
