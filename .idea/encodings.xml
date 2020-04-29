@@ -3,5 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/kotlin/dev/brew/commands/AlertCommand.kt" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/kotlin/dev/brew/commands/CraftCommand.kt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/kotlin/dev/brew/commands/TeleportCommand.kt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/kotlin/dev/brew/commands/TphereCommand.kt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/kotlin/dev/brew/commands/TpposCommand.kt" charset="windows-1252" />
   </component>
 </project>

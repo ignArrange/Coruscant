@@ -20,3 +20,9 @@ commands:
   alert:
   craft:
     aliases: [craftingtable, crafting, workbench]
+  tp:
+    aliases: [teleport]
+  tphere:
+    aliases: [s, bring, drag]
+  tppos:
+    aliases:  [tppossiton, tpcords]

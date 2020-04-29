@@ -1,10 +1,7 @@
 package dev.brew
 
-import dev.brew.commands.AlertCommand
-import dev.brew.commands.GamemodeCreativeCommand
+import dev.brew.commands.*
 //import dev.brew.commands.GamemodeCreativeCommand
-import dev.brew.commands.GamemodeSurvivalCommand
-import dev.brew.commands.HelpCommand
 import dev.brew.commands.effects.FireCommand
 import dev.brew.commands.effects.InvisCommand
 import dev.brew.commands.effects.SpeedCommand
@@ -49,6 +46,9 @@ class Coruscant : JavaPlugin() {
         this.getCommand("fire").executor = FireCommand(this)
         this.getCommand("invis").executor = InvisCommand(this)
         this.getCommand("alert").executor = AlertCommand(this)
+        this.getCommand("tphere").executor = TphereCommand()
+        this.getCommand("tp").executor = TeleportCommand()
+        this.getCommand("tppos").executor = TpposCommand()
     }
 
     companion object {
