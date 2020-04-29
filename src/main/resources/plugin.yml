@@ -18,10 +18,17 @@ commands:
   fire:
     aliases: [fr, fireres]
   alert:
+  clearinventory:
+    aliases: [ci, niggaremovemyinventory]
+  copyinventory:
+    aliases: [cpinv, cpfrom]
+  fly:
+  eat:
+    aliases: [feed]
   craft:
     aliases: [craftingtable, crafting, workbench]
-  tp:
-    aliases: [teleport]
+  teleport:
+    aliases: [tp]
   tphere:
     aliases: [s, bring, drag]
   tppos:

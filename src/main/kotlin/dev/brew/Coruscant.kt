@@ -17,10 +17,9 @@ import org.bukkit.plugin.java.JavaPlugin
  * @author Brew
  */
 class Coruscant : JavaPlugin() {
-
+//    lateinit var npcmanager : NPCManager
     override fun onEnable() {
         instance = this
-
         this.saveDefaultConfig()
 
         this.server.consoleSender.sendMessage("[Coruscant] Registering Commands")
@@ -47,8 +46,13 @@ class Coruscant : JavaPlugin() {
         this.getCommand("invis").executor = InvisCommand(this)
         this.getCommand("alert").executor = AlertCommand(this)
         this.getCommand("tphere").executor = TphereCommand()
-        this.getCommand("tp").executor = TeleportCommand()
+        this.getCommand("teleport").executor = TeleportCommand()
         this.getCommand("tppos").executor = TpposCommand()
+        this.getCommand("eat").executor = EatCommand(this)
+        this.getCommand("craft").executor = CraftCommand()
+        this.getCommand("fly").executor = FlyCommand(this)
+        this.getCommand("clearinventory").executor = ClearInventoryCommand(this)
+        this.getCommand("copyinventory").executor = CopyInventoryCommand(this)
     }
 
     companion object {
