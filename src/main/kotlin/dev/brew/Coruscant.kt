@@ -11,6 +11,7 @@ import dev.brew.commands.effects.SpeedCommand
 import dev.brew.commands.links.DiscordCommand
 import dev.brew.commands.links.TeamspeakCommand
 import dev.brew.commands.links.TelegramCommand
+import dev.brew.events.AsyncPlayerChat
 import dev.brew.events.PlayerJoinEvent
 import org.bukkit.plugin.PluginManager
 import org.bukkit.plugin.java.JavaPlugin
@@ -25,14 +26,16 @@ class Coruscant : JavaPlugin() {
 
         this.saveDefaultConfig()
 
-//        this.server.consoleSender.sendMessage("[Coruscant] Registering Commands")
+        this.server.consoleSender.sendMessage("[Coruscant] Registering Commands")
         registerCommands()
+        this.server.consoleSender.sendMessage("[Coruscant] Registering Events")
         registerEvents()
     }
 
     private fun registerEvents() {
         var pluginManager : PluginManager = this.server.pluginManager
         pluginManager.registerEvents(PlayerJoinEvent(this), this)
+        pluginManager.registerEvents(AsyncPlayerChat(this), this)
     }
 
     private fun registerCommands() {
