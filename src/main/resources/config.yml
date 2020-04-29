@@ -1,35 +1,22 @@
 help:
-  -
-  -
-  -
-  -
-  -
+  - "yea"
+  - "yea"
+  - "yea"
+  - "yea"
+  - "yea"
 spawn:
-  x:
-  y:
-  z:
-gamemode:
-  creative: "&6Gamemode: &fCREATIVE"
-  survival: "&6Gamemode: &fSURVIVAL"
+  x: 63
+  y: 38
+  z: 260
 # %line% - Line
 # %player% - Player Name
 # %doublearrow% - »
 join:
-  -
-  -
-  -
-  -
-  -
-discord:
-telegram:
-teamspeak:
-speed:
-  enabled:
-  disabled:
-fire:
-  enabled:
-  disabled:
-invis:
-  enabled:
-  disabled:
-
+  - "yea"
+  - "%line%"
+  - "%player%"
+  - "%doublearrow%"
+  - "yea"
+discord: "yea"
+telegram: "yea"
+teamspeak: "yea"

@@ -1,6 +1,7 @@
 package dev.brew.commands
 
 import dev.brew.Coruscant
+import dev.brew.utils.ChatUtil
 import org.bukkit.ChatColor
 import org.bukkit.GameMode
 import org.bukkit.command.Command
@@ -20,7 +21,7 @@ class GamemodeCreativeCommand(private val instance: Coruscant) : CommandExecutor
         var player : Player = sender as Player
 
         player.gameMode = GameMode.CREATIVE
-        player.sendMessage(instance.config.getString(ChatColor.translateAlternateColorCodes('&', "gamemode.creative")))
+        player.sendMessage("${ChatColor.GOLD}Gamemode${ChatColor.WHITE}: CREATIVE")
         return true
     }
 

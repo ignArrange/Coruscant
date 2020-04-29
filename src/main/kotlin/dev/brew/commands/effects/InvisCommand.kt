@@ -1,7 +1,8 @@
 package dev.brew.commands.effects
 
 import dev.brew.Coruscant
-import dev.brew.commands.GamemodeCreativeCommand
+import dev.brew.utils.ChatUtil
+import org.bukkit.ChatColor
 import org.bukkit.command.Command
 import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
@@ -17,18 +18,18 @@ class InvisCommand (private val instance: Coruscant) : CommandExecutor {
 
     val fire = HashSet<UUID>()
     override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>): Boolean {
-        if (!sender.hasPermission(GamemodeCreativeCommand.PERMISSION)) {
+        if (!sender.hasPermission(InvisCommand.PERMISSION)) {
             return false
         }
         var player: Player = sender as Player
         if (!this.fire.contains(player.uniqueId)) {
             fire.add(player.uniqueId)
             player.removePotionEffect(PotionEffectType.INVISIBILITY)
-            player.sendMessage(instance.config.getString("invis.disabled"))
+            player.sendMessage("${ChatColor.LIGHT_PURPLE}Invisibility${ChatColor.RED} disabled")
 
         } else {
             fire.remove(player.uniqueId)
-            player.sendMessage(instance.config.getString("invis.enabled"))
+            player.sendMessage("${ChatColor.LIGHT_PURPLE}Invisibility${ChatColor.GREEN} enabled")
             player.addPotionEffect(PotionEffect(PotionEffectType.INVISIBILITY, 10000000, 2))
             return false;
         }

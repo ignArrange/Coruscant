@@ -22,7 +22,7 @@ class AlertCommand (private val instance: Coruscant) : CommandExecutor {
             str.append(args[i] + " ")
         }
         val msg = str.toString()
-        Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', "&7[&aAlert&7]&r $msg"))
+        Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', "&8[&4Alert&8]&r $msg"))
         return true
     }
 }
