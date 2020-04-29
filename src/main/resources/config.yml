@@ -7,3 +7,16 @@ help:
 gamemode:
   creative: "&6Gamemode: &fCREATIVE"
   survival: "&6Gamemode: &fSURVIVAL"
+discord:
+telegram:
+teamspeak:
+speed:
+  enabled:
+  disabled:
+fire:
+  enabled:
+  disabled:
+invis:
+  enabled:
+  disabled:
+

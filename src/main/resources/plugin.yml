@@ -5,3 +5,15 @@ commands:
   gmc:
   gms:
   help:
+  discord:
+    aliases: [dc, disc]
+  telegram:
+    aliases: [tele]
+  teamspeak:
+    aliases: [ts]
+  speed:
+    aliases: [sp, fastasfuckboy]
+  invis:
+    aliases: [inv, invisiblity]
+  fire:
+    aliases: [fr, fireres]

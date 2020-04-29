@@ -14,13 +14,13 @@ import org.bukkit.entity.Player
 class GamemodeCreativeCommand(private val instance: Coruscant) : CommandExecutor{
     override fun onCommand(sender: CommandSender,command: Command,label: String,args: Array<out String>): Boolean {
 
-        if (!sender.hasPermission(PERMISSION) || !sender.hasPermission("$PERMISSION.others")) {
+        if (!sender.hasPermission(PERMISSION)) {
             return false
         }
         var player : Player = sender as Player
 
         player.gameMode = GameMode.CREATIVE
-        player.sendMessage(Coruscant.instance.config.getString(ChatColor.translateAlternateColorCodes('&', "gamemode.creative")))
+        player.sendMessage(instance.config.getString(ChatColor.translateAlternateColorCodes('&', "gamemode.creative")))
         return true
     }
 

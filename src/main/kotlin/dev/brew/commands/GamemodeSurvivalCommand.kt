@@ -20,7 +20,7 @@ class GamemodeSurvivalCommand(private val instance: Coruscant) : CommandExecutor
         var player : Player = sender as Player
 
         player.gameMode = GameMode.SURVIVAL
-        player.sendMessage(Coruscant.instance.config.getString(ChatColor.translateAlternateColorCodes('&', "gamemode.survival")))
+        player.sendMessage(instance.config.getString(ChatColor.translateAlternateColorCodes('&', "gamemode.survival")))
 
         return true
     }
